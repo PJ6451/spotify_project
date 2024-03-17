@@ -3,5 +3,6 @@
 /__pycache__
 /logs
 /plugins
-dags/config/
+config/config.py
 */*/__pycache__
+.DS_Store
