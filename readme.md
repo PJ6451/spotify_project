@@ -1,7 +1,7 @@
 # Motivation and Questions
-The motivation behind this project was very simple. First, I wanted to experiment with Airflow and Tableau. Since these tools can be somewhat linked, I knew I could use them in a single project. Secondly, I love music and have been playing guitar for a long time, and I wanted to incorporate that knowledge into this project.
+The motivation behind this project was very simple. First, I wanted to experiment with Airflow and Tableau. Since these tools can be somewhat linked, I knew I could use them in a single project. Secondly, I love music and have been playing guitar for a long time, and I wanted to incorporate that in some way.
 
-To that end, I decided on an easy problem. On a fundamental level, there's differences between different countries musical preferences. For example, US pop music usually is composed of chord progressions compossed of 4 chords; however, Japanese pop is noted for having much longer, much more complex chord progressions (both of these statements obviously reflect average behavior and are not hard rules). I knew Spotify had audio feature metadata built into their API , and so my question became:
+To that end, I decided on an easy problem. On a fundamental level, there's differences between different countries musical preferences. For example, US pop music usually is composed of chord progressions compossed of 4 chords; however, Japanese pop is noted for having much longer, much more complex chord progressions (both of these statements obviously reflect average behavior and are not hard rules). [This][https://www.youtube.com/watch?v=QtPx6WdNM30) is a short video that shows this exact concept. I knew Spotify had audio feature metadata built into their API , and so my question became:
 
 ### Do Spotify's audio features reflect any differences between different countries' music?
 
@@ -23,7 +23,7 @@ From a technical perspective, I used the following software:
 - airflow, to run a docker container which would execute my ETL pipeline,
 - Tableau, to show off the results and do some analysis.
 
-I decided to let airflow run daily for 2 weeks.
+I decided to let airflow run daily for 2 weeks. During the extract phase, I did some null-checking to make sure I was only pulling in actual values. Trying to accomodate for null values in the audio features meta data would be very difficult, and would probably rely on some form of cluster of individual artist' music. Considering the scope, I decided to focus on making sure the artist and spotify uri's were filled, so that I could at least get that data at a later date if possible. As far as any transformations, this was mainly make sure the data was in the right order for easy loading. 
 
 # Results
 
