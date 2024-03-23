@@ -1,7 +1,7 @@
 # Motivation and Questions
 The motivation behind this project was very simple. First, I wanted to experiment with Airflow and Tableau. Since these tools can be somewhat linked, I knew I could use them in a single project. Secondly, I love music and have been playing guitar for a long time, and I wanted to incorporate that in some way.
 
-To that end, I decided on an easy problem. On a fundamental level, there's differences between different countries musical preferences. For example, US pop music usually is composed of chord progressions compossed of 4 chords; however, Japanese pop is noted for having much longer, much more complex chord progressions (both of these statements obviously reflect average behavior and are not hard rules). [This][https://www.youtube.com/watch?v=QtPx6WdNM30) is a short video that shows this exact concept. I knew Spotify had audio feature metadata built into their API , and so my question became:
+To that end, I decided on an easy problem. On a fundamental level, there's differences between different countries musical preferences. For example, US pop music usually is composed of chord progressions compossed of 4 chords; however, Japanese pop is noted for having much longer, much more complex chord progressions (both of these statements obviously reflect average behavior and are not hard rules). [This](https://www.youtube.com/watch?v=QtPx6WdNM30) is a short video that shows this exact concept. I knew Spotify had audio feature metadata built into their API , and so my question became:
 
 ### Do Spotify's audio features reflect any differences between different countries' music?
 
