@@ -23,7 +23,7 @@ From a technical perspective, I used the following software:
 - airflow, to run a docker container which would execute my ETL pipeline,
 - Tableau, to show off the results and do some analysis.
 
-I decided to let airflow run daily for 2 weeks. During the extract phase, I did some null-checking to make sure I was only pulling in actual values. Trying to accomodate for null values in the audio features meta data would be very difficult, and would probably rely on some form of cluster of individual artist' music. Considering the scope, I decided to focus on making sure the artist and spotify uri's were filled, so that I could at least get that data at a later date if possible. As far as any transformations, this was mainly make sure the data was in the right order for easy loading. 
+I decided to let airflow run daily for 2 weeks. During the extract phase, I did some null-checking to make sure I was only pulling in actual values. Trying to accomodate for null values in the audio features meta data would be very difficult, and would probably rely on some form of clustering of individual artist' music. Considering the scope, I decided to focus on making sure the artist and spotify uri's were filled, so that I could at least get that data at a later date if possible. As far as any transformations, this was mainly make sure the data was in the right order for easy loading. 
 
 # Results
 
